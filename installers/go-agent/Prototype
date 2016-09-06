@@ -1,0 +1,8 @@
+i pkginfo
+i copyright
+i depend
+i checkinstall
+i preinstall
+i postinstall
+i preremove
+i postremove
