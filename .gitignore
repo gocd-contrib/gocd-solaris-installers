@@ -1,0 +1,7 @@
+.vagrant/
+go-agent-*.zip
+go-server-*.zip
+go-agent-*.zip.sha1sum
+go-server-*.zip.sha1sum
+go-agent-*-solaris
+go-server-*-solaris

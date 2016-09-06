@@ -125,8 +125,5 @@ Vagrant.configure('2') do |config|
     test_vm.vm.provision :shell, inline: "sudo ln -sf /opt/csw/bin/greadlink /usr/bin/readlink"
     test_vm.vm.provision :shell, inline: "cat /vagrant/go-agent-#{version}.#{epoch}-solaris.gz | gunzip > go-agent-#{version}.#{epoch}-solaris"
     test_vm.vm.provision :shell, inline: "cat /vagrant/go-server-#{version}.#{epoch}-solaris.gz | gunzip > go-server-#{version}.#{epoch}-solaris"
-
-    test_vm.vm.provision :shell, inline: "sudo pkgadd -y -d go-agent-#{version}.#{epoch}-solaris"
-    test_vm.vm.provision :shell, inline: "sudo pkgadd -y -d go-server-#{version}.#{epoch}-solaris"
   end
 end

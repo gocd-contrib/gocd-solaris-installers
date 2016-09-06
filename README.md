@@ -12,7 +12,19 @@ How to use this repository —
     $ vagrant up package --provider virtualbox
     ```
 
-- Once the installers, are built, run the following to verify that they install properly
+- Once the installers, are built, run the following to bring up another virtualbox instance to verify that the packages work OK
+
+    ```
+    $ vagrant up test --provider virtualbox
+    $ vagrant ssh test
+    ```
+
+    Once inside the vagrant box
+
+    ```
+    $ sudo pkgadd -y -d go-agent-VERSION-solaris
+    $ sudo pkgadd -y -d go-server-VERSION-solaris
+    ```
 
 # To run the GoCD agent or server —
 
